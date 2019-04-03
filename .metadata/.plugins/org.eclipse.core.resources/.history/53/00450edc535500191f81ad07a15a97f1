@@ -1,0 +1,24 @@
+package Testing;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+
+import org.junit.Test;
+
+public class searchStringTest {
+
+	@Test
+	public void test() {
+		StringIterator expected = new StringIterator();
+		ArrayList output = new ArrayList();
+		int[] outputadd = {2,3};
+		output.add(outputadd);
+		
+		int[] testnums = {1,2,3};
+		ArrayList<int[]> actual = StringIterator.searchString(5, testnums);
+		
+		assertEquals(expected, actual);
+	}
+
+}

@@ -1,0 +1,25 @@
+
+public class CharacterChange {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String sentence = "Character";
+		System.out.println(sentence);
+		sentence = replace("sentence", 'a', 'k');
+		System.out.println(sentence);
+		
+	}
+	
+	public static String replace(String sentence, char x, char y){
+		
+		for (int i = 0; i < sentence.length(); i++){
+			if (sentence.charAt(i) == x){
+				sentence.replace(x, y);
+			}
+		}
+		
+		return sentence;
+	}
+
+}

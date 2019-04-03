@@ -7,8 +7,8 @@ public class StringIterator {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int ans = 13;
-		int[] nums = {1,2,3,4,5,6,7,8,9};
+		int ans = 5;
+		int[] nums = {1,2,3};
 		
 		ArrayList<int[]> matches = searchString(ans, nums);
 		
@@ -24,7 +24,7 @@ public class StringIterator {
 		for (int i=0; i < array.length; i++){
 			for (int j=0; j < array.length; j++){
 				if (array[i] + array[j] == ans && array[i] != array[j]){
-					int[] result = {i,j};
+					int[] result = {array[i],array[j]};
 					results.add(result);		
 				}
 			}

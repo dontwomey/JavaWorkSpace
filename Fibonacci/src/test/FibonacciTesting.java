@@ -1,0 +1,18 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class FibonacciTesting {
+
+	@Test
+	public void test() {
+		int[] expected = {0,1,1,2,3,5};
+		int[] actual = FibonacciGenerator.generateFibSequence(6);
+		
+		assertArrayEquals(expected, actual);
+		
+	}
+
+}

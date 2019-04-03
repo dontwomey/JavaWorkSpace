@@ -5,6 +5,7 @@ public class MovieTester {
 
 	public static void main(String[] args) {
 	
+		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		Movie[] movies;
 		movies = new Movie[3];

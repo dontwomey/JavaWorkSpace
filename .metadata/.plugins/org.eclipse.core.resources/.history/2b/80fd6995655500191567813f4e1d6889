@@ -1,0 +1,30 @@
+package test;
+
+public class StringReversal {
+
+	public static void main(String[] args) {
+		
+		String word = "sentence";
+		
+		String reversedWord = ""; 
+		
+		for (int i = 0; i < word.length(); i++){
+			reversedWord += word.charAt(word.length() - i);
+		}
+		
+		System.out.println(reversedWord);
+		
+		//System.out.println(reversedWord);
+
+	}
+
+	static String reverseWord(String word) {
+		
+		String reversedWord = "";
+		for (int i = 0; i < word.length(); i++){
+			reversedWord += word.charAt(word.length() - i);
+		}
+		return reversedWord;
+	}
+
+}
